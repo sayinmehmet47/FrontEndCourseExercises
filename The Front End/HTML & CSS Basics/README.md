@@ -6,7 +6,7 @@
 
 #### INSTRUCTIONS
 
-Here are your assignments for this lesson:
+Here are your assignments for this lesson:ss
 
 **1)** Use [Loom](loom.com) or some other kind of screen recording software to record and upload the following screencast:
   - Record a coding session where you build a basic HTML boilerplate, with just the basic building blocks (doctype, head, body, etc.) and explaining each element's functionality and role, e.g. DOCTYPE is the document declaration, an instruction to the browser to parse this document as an HTML document, etc.
