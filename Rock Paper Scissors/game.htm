@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+<button id="btn" onclick="Play()">Click to Play again!!!</button>
+
+
+
+
+
+    <script>
+           
+
+            let round = 0;
+            let scoreComputer = 0;
+            let scorePlayer = 0;
+            const Play=()=>{
+                
+                General()
+                
+            }
+
+        const General = () => {
+
+            let table = [{ player: "Paper", computer: "Paper", result: "Draw" },
+
+            { player: "Paper", computer: "Rock", result: "You Win" },
+            { player: "Paper", computer: "Scissor", result: "You Lost" },
+            { player: "Rock", computer: "Paper", result: "You Lost" },
+            { player: "Rock", computer: "Rock", result: "Draw" },
+            { player: "Rock", computer: "Scissor", result: "You Win" },
+            { player: "Scissor", computer: "Paper", result: "You Win" },
+            { player: "Scissor", computer: "Rock", result: "You Lost" },
+            { player: "Scissor", computer: "Scissor", result: "Draw" },
+
+
+            ]
+            let player;
+            const Player = () => {
+                player = prompt("Choose from Rock,Paper,Scissor and write it in here!!!")
+                if (player === "Rock" || player === "Scissor" || player === "Paper") {
+                    alert(`You have selected ${player}`)
+                } else {
+                    player = prompt("Type again from Rock,Paper,Scissor")
+                    if (player !== "Rock" || player !== "Scissor" || player !== "Paper") {
+                        Player()
+                    }
+                }
+
+
+            }
+            Player()
+
+            const computerPlay = () => {
+                let random = Math.random()
+                let randomComputer;
+                random = Math.floor(random * 30)
+                random <= 10 ? randomComputer = "Rock" : random <= 20 ? randomComputer = "Paper" : randomComputer = "Scissor"
+                return randomComputer
+
+            }
+         
+            let computer = computerPlay()
+
+            const playRound = (players, computers) => {
+
+              
+
+
+                table.map(e => {
+                    (e.player === players && e.computer === computers && round < 5) ? (
+                        e.result === "You Win" ? (scorePlayer=scorePlayer+1, round=round+1) : e.result === "You Lost" ? (scoreComputer=scoreComputer+1, round=round+1) : round=round+1,
+                        console.log(`Your choice:${players}, Computers choice:${computers}, result:${e.result}`)
+                        
+
+                    )
+
+                        : (
+                            null
+                        )
+                })
+
+                if(round===5){
+                    document.getElementById("btn").disabled=true
+                    if(scorePlayer>scoreComputer){
+                        console.log("You Win🎇🎇🎇!!")
+                    }else if(scorePlayer<scoreComputer){
+                        console.log("You Lost🎃🎃🎃")
+                    }else{
+                        console.log("It is Draw💻💻💻")
+                    }
+                }
+
+            }
+
+            playRound(player, computer)
+            console.log(round)
+
+           
+
+
+        }
+
+        General()
+
+
+    </script>
+</body>
+
+</html>
