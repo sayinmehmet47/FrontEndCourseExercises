@@ -1,0 +1,23 @@
+.post-meta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.photo {
+  background-image: url(https://cdn.pixabay.com/photo/2018/12/10/10/21/earth-3866609_960_720.jpg);
+  padding: 100px;
+  border-radius: 5px;
+}
+
+p {
+  text-align: left;
+  margin-left: 25px;
+}
+
+.info {
+  border-bottom: 1px solid black;
+  padding: 25px;
+}
