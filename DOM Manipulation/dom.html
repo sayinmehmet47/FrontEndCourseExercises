@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+
+    <script>
+        var div = document.createElement("p")
+        div.innerText = "Hey I'm red!"
+        div.style.color = "red"
+        var h3 = document.createElement("h3")
+        h3.innerText = "I'm a blue h3!"
+        h3.style.color = "blue"
+        var footer=document.createElement("div")
+        footer.style.backgroundColor="pink"
+        footer.style.border="1px solid black"
+        var child=document.createElement("h1")
+        child.innerText="I'm in a div"
+        footer.appendChild(child)
+        console.log(footer)
+        
+        var childParagraph=document.createElement("p")
+        childParagraph.innerText="MEE TOO!"
+        footer.appendChild(childParagraph)
+   
+
+
+        document.body.appendChild(div)
+        document.body.appendChild(h3)
+        document.body.appendChild(footer)
+    
+
+
+    </script>
+</body>
+
+</html>
