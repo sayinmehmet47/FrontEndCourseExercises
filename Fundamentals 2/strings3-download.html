@@ -27,6 +27,12 @@
   </body>
   <script>
     let quote = 'I dO nOT lIke gREen eGgS anD HAM';
+    
+    let fixedQuote=quote[0].toUpperCase() +quote.substring(1).toLowerCase()
+    fixedQuote=fixedQuote.replace("green eggs and ham","orange")
+    let finalQuote=fixedQuote+" "+"full stop"
+    
+    console.log(fixedQuote)
 
     // Add your code here
 
