@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Data-Types</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Playfair Display'
+        }
+
+        .table-responsive {
+
+            width: 90%;
+            height: 70vh;
+        }
+    </style>
+</head>
+
+<body class="" style="display: flex;flex-direction: column; justify-content: center; align-items: center;">
+    <header class="text-center m-2">
+
+        <div>
+            <img class="img-fluid shadow"
+                src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80"
+                alt="photo" style="height:30vh;width:85vw;border-radius: 5px;;
+                ">
+        </div>
+        <div class="d-flex flex-column mt-3">
+            <i class="fas fa-lg fa-user mb-3 ms-4"> Mehmet Sayin</i>  
+            <i class="far fa-lg fa-calendar-times mb-5"> 05/05/2021</i>     
+        </div>
+        <h1 style="font-family:'Playfair Display', serif;">JavaScript Data Types And Data Structures</h1>
+            <hr class="text-danger">
+    </header>
+    
+    <section class="table-responsive mt-3">
+        <h4 class="text-center">Data Types</h4>
+        <table class="table table-success table-bordered ">
+            <thead class="table-light ">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Example</th>
+
+                </tr>
+            </thead>
+            <tbody class="align-middle">
+                <tr>
+                    <th >1</th>
+                    <td>String</td>
+                    <td>Stores textual expressions in string data type. When entering string data into variables, (")
+                        quotation marks or (‘) apostrophes are used.</td>
+                    <td>let name=”life code”; </td>
+                </tr>
+                <tr>
+                    <th >3</th>
+                    <td>Number</td>
+                    <td>Store number expressions.There is no need for ("") double quotes or (") single quotes when
+                        defining
+                        values </td>
+                    <td>let a=10; var pi=3.14</td>
+                </tr>
+                <tr>
+                    <th >3</th>
+                    <td>Boolean</td>
+                    <td>Some expressions have only two alternatives. The expression is either true (true) or false
+                        (false).
+                        Such variables are called boolean expressions. Logical data are used for expressions that
+                        require
+                        conditions.</td>
+                    <td> var a = true;var b = false;</td>
+                </tr>
+                <tr>
+                    <th >4</th>
+                    <td>Objects</td>
+                    <td>Objects keep their sub-variable data. Use curly brackets when ordering child variables.
+                        Variables
+                        are written separated by commas.</td>
+                    <td>let info = { name:”lifeacode”, content:”education” };</td>
+                </tr>
+                <tr>
+                    <th >5</th>
+                    <td>Undefined</td>
+                    <td>There are variables that do not contain values in the JavaScript language. These variables do
+                        not
+                        contain data. When creating the variable that does not contain data, it is created as a var
+                        variable. So only the variable name is written. The (=) equals operator is not used.</td>
+                    <td>let city;</td>
+                </tr>
+                <tr>
+                    <th >6</th>
+                    <td>Null</td>
+                    <td>In some cases, the data in the variable must be deleted. Null expression is used for this.</td>
+                    <td>city=null;</td>
+                </tr>
+                <tr>
+                    <th >7</th>
+                    <td>typeof</td>
+                    <td>The type of a variable can be queried using the typeof operator.</td>
+                    <td>typeof “lifeacode” //string
+
+                        typeof “123” //number
+
+                        typeof true //boolean
+
+                        typeof [1855,4785,5412,5698] //object</td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
