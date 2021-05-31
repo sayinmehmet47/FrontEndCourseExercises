@@ -4,7 +4,7 @@ const sumAll = function (a, b) {
     const arr = [a, b].sort((a, b) => a - b);
     let c, d;
     [c, d] = [...arr];
-
+    console.log(arr)
     if (c > 0 && d > 0) {
       for (i = c; i < d + 1; i++) {
         sum += i;

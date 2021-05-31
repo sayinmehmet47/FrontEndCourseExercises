@@ -2,6 +2,7 @@ const removeFromArray = function () {
   let arr = Array.from(arguments);
   let main = arr[0];
   let secondary = arr.slice(1);
+  
   var filtered = main.filter((e) => !secondary.includes(e));
 
   console.log(filtered);
