@@ -20,7 +20,7 @@ describe('findTheOldest', function() {
         yearOfDeath: 1941
       },
     ]
-    expect(findTheOldest(people).name).toEqual('Jane');
+    expect(findTheOldest(people).name).toEqual('Ray');
   });
 
 });
