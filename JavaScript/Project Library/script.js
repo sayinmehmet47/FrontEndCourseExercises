@@ -1,12 +1,21 @@
 
 //It is created by classes
+
 let submit = document.querySelector('.submit');
+
 let addNewBook = document.querySelector('.add');
+
 var inputs = document.querySelector('form').elements;
+
 let body = document.querySelector('body');
+
 let cardContainer = document.querySelector('.card-container');
+
 let form = document.querySelector('form');
+
 var author, title, pages, read, cards;
+
+
 
 addNewBook.addEventListener('click', () => {
   cardContainer.classList.add('d-none');
@@ -15,6 +24,8 @@ addNewBook.addEventListener('click', () => {
 });
 
 //initial library
+
+
 let myLibrary = [
   {
     author: 'Ihsan oktay anar',
@@ -28,9 +39,17 @@ let myLibrary = [
 ];
 
 //create card elements
+
+
 General = () => {
+
+
+
   const example = (initial) => {
     console.log(initial);
+
+
+
 
     if (initial === 0) {
       myLibrary.map((e) => {
@@ -78,6 +97,9 @@ General = () => {
   };
   example(0);
 
+
+
+
   //constructor
   class Book {
     constructor(author, title, pages, read) {
@@ -87,6 +109,8 @@ General = () => {
       this.read = read;
     }
   }
+
+
 
   Book.prototype.addBook = function () {
     myLibrary = [
