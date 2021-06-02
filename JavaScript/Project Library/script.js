@@ -1,3 +1,5 @@
+
+//It is created by classes
 let submit = document.querySelector('.submit');
 let addNewBook = document.querySelector('.add');
 var inputs = document.querySelector('form').elements;
