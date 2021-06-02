@@ -1,6 +1,10 @@
 const helloWorld = function () {
+
   return 'Hello, World!';
 };
-helloWorld();
+
+console.log(helloWorld())
+
 
 module.exports = helloWorld;
+
